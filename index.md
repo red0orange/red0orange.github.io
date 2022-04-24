@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## 个人信息
+- 姓名：Dehao Huang
+- 院校：南方科技大学
+- 学业阶段：研究生
+- 毕业年份：2025
 
-You can use the [editor on GitHub](https://github.com/red0orange/red0orange.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+## 研究兴趣
+- Visual Semantic SLAM
+- Active Mapping
+- Augmented Reality
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 项目经历
+本科阶段：
+- RoboMaster: [Project Home](https://github.com/red0orange/rm_ros).
+- Bone Marrow Cell Detection: [Algorithm](https://github.com/red0orange/blood_detect), [Software](https://github.com/red0orange/blood_software), [Toolbox](https://github.com/red0orange/red0orange).
+- Smart Car: [Project Home](https://github.com/red0orange/racecar).
+- People following: [Project Home](https://github.com/red0orange/ros_project), [Controllable Pedestrian Simulation](https://github.com/red0orange/gazebo_custom_plugin).
+- Other lite projects: [Da Tiao](https://github.com/red0orange/ros_ws), [Android File Transfer](https://github.com/red0orange/FileTransfer), [2021 MCM](https://github.com/red0orange/2020MCM), [Smart Trash Car](https://github.com/red0orange/smart_trash_can), [Harmony Shell Script](https://github.com/red0orange/HarmonyShellScript).
 
-### Markdown
+研究生阶段
+- <nop>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/red0orange/red0orange.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## 论文
+- Huang, Dehao, et al. "[Bone Marrow Cell Recognition: Training Deep Object Detection with A New Loss Function.](https://ieeexplore.ieee.org/abstract/document/9651340/)" 2021 IEEE International Conference on Imaging Systems and Techniques (IST). IEEE, 2021.
