@@ -17,7 +17,7 @@ author_profile: true
               <br>
                 Chuhao Liu, <strong>Zhijian Qiao</strong>, Jieqi Shi, Ke Wang, Peize Liu and Shaojie Shen
               <br>
-              <em>Under the TRO review.</em><br>
+              <em>IEEE Transactions on Robotics, March 2025.</em><br>
               <a href="https://github.com/HKUST-Aerial-Robotics/SG-Reg">code</a> / 
               <a href="https://www.youtube.com/watch?v=Q7qa-6QgG5U">video</a>
             </td>
