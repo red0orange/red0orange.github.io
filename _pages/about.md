@@ -36,8 +36,8 @@ Selected Honors
 
 Community Services
 ======
-* Conference reviewer: ICRA, IROS, ROBIO
-* Journal reviewer: T-ASE
+* Conference reviewer: CVPR, ICCV, ECCV, ICRA, IROS
+* Journal reviewer: T-RO, RAL, T-ASE
 * Teaching assistant: 
   * ELEC 1100: Introduction to Electro-Robot Design, HKUST, 2023 Spring
   * ELEC 3210: Machine Learning and Information Processing for Robotics, HKUST, 2023 Fall
