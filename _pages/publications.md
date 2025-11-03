@@ -18,8 +18,12 @@ author_profile: true
                 Chuhao Liu, <strong>Zhijian Qiao</strong>, Jieqi Shi, Ke Wang, Peize Liu and Shaojie Shen
               <br>
               <em>IEEE Transactions on Robotics, March 2025.</em><br>
-              <a href="https://github.com/HKUST-Aerial-Robotics/SG-Reg">code</a> / 
-              <a href="https://www.youtube.com/watch?v=Q7qa-6QgG5U">video</a>
+              <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860">IEEE T-RO</a> /
+              <a href="https://arxiv.org/abs/2504.14440">arxiv</a> /
+              <a href="https://youtu.be/s3P1FvbQGhs">video</a> /
+              <a href="https://www.bilibili.com/video/BV1ymLWzaEMo/">bilibili</a> /
+              <a href="https://huggingface.co/glennliu/sgnet">huggingface</a> /
+              <a href="https://github.com/HKUST-Aerial-Robotics/SG-Reg">code</a>
             </td>
           </tr>
     </table>
