@@ -14,9 +14,9 @@ My team and I won the championship of the RoboCon China contest in 2017 and 2018
 
 ### RoboCon 2017
     
-<iframe src="//player.bilibili.com/player.html?aid=55401887&bvid=BV1u4411P7xp&cid=96870545&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=55401887&bvid=BV1u4411P7xp&cid=96870545&page=1" scrolling="yes" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" style="width:100%;height:500px;"> </iframe>
 
 ### RoboCon 2018
   
-<iframe src="//player.bilibili.com/player.html?aid=60191717&bvid=BV1Kt411J7xn&cid=104804289&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=60191717&bvid=BV1Kt411J7xn&cid=104804289&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" style="width:100%;height:500px;"> </iframe>
 
