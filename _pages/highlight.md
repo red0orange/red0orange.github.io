@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Highlights in robotics career"
-permalink: /talks/
+title: "Highlight"
+permalink: /highlight/
 author_profile: true
 ---
 # Two-time RoboCon Champion

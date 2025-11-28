@@ -7,10 +7,10 @@ main:
 #    url: /teaching/
     
   - title: "Projects"
-    url: /portfolio/
+    url: /projects/
 
   - title: "Highlight"
-    url: /talks/
+    url: /highlight/
 #  - title: "Blog Posts"
 #    url: /year-archive/
 #
