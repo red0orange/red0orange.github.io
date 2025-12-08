@@ -9,7 +9,7 @@ My team and I won the championship of the RoboCon China contest in 2017 and 2018
 
 <br/>
 <div align=center >
-    <img src="/images/heying2.jpg" width="500"/>
+    <img src="/media/images/heying2.jpg" width="500"/>
 </div>
 
 ### RoboCon 2017
