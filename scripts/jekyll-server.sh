@@ -3,7 +3,7 @@
 # Jekyll Server Management Script
 # This script manages Jekyll server startup and shutdown to avoid port conflicts
 
-JEKYLL_PID_FILE=".jekyll.pid"
+JEKYLL_PID_FILE="../.jekyll.pid"
 JEKYLL_PORT=4000
 
 # Colors for output
@@ -58,7 +58,7 @@ start_server() {
     [ -f "$JEKYLL_PID_FILE" ] && rm -f "$JEKYLL_PID_FILE"
 
     # Start Jekyll server in background (disable watch to avoid symlink issues)
-    bundle exec jekyll serve --host 0.0.0.0 --port $JEKYLL_PORT --no-watch &
+    ./scripts/run-jekyll.sh serve --host 0.0.0.0 --port $JEKYLL_PORT --no-watch &
     JEKYLL_PID=$!
 
     # Save PID
