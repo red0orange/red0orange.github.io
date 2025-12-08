@@ -57,6 +57,9 @@ start_server() {
     # Remove old PID file if exists
     [ -f "$JEKYLL_PID_FILE" ] && rm -f "$JEKYLL_PID_FILE"
 
+    # Clean up Sass cache before starting
+    [ -d "../.sass-cache" ] && rm -rf ../.sass-cache
+
     # Start Jekyll server in background (disable watch to avoid symlink issues)
     ./scripts/run-jekyll.sh serve --host 0.0.0.0 --port $JEKYLL_PORT --no-watch &
     JEKYLL_PID=$!
