@@ -8,6 +8,10 @@
 # Site Settings
 locale: "en-US"
 title: "Zhijian's Website"
+
+# Server Settings
+port: 4000
+host: 0.0.0.0
 title_separator: "-"
 name: &name "Zhijian Qiao (乔志健)"
 description: &description "Ph.D. student in HKUST Aerial Robotics Group"
@@ -83,7 +87,7 @@ analytics:
 # Site Author
 author:
   name: "Zhijian Qiao (乔志健)"
-  avatar: "opt1.jpg"
+  avatar: "/media/images/opt1.jpg"
   bio: "Ph.D. student in HKUST Aerial Robotics Group"
   location: "Clear Water Bay, Hong Kong, China"
   employer:
@@ -138,9 +142,9 @@ exclude:
   - LICENSE
   - README
   - Rakefile
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
+  - static/js/_main.js
+  - static/js/plugins
+  - static/js/vendor
   - config
   - gulpfile.js
   - log
