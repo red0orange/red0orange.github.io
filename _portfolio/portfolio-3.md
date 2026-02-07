@@ -1,45 +1,12 @@
 ---
-title: "Autonomous Driving for Tracked Robot in Off-road Environment"
-excerpt: "In an off-road environment, the assumption of horizontal ground is usually invalid, so IMU and wheel encoders are integrated into a closed form on SE3, which can be used to correct the distortion caused by motion. In addition, [LPD-Net](https://github.com/qiaozhijian/LPD-Net-Pytorch.git) (reproduced by myself) is integrated into [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM.git) to detect loop-closure with a coarse-to-fine sequence matching strategy, which helps to build a more accurate map for map-based localization. Then [PLReg3D](https://github.com/IRMVLab/PLReg3D.git) learns local and global descriptors jointly for global localization at the initial step. Finally, a loosely-coupled method based on the pose graph is applied to provide the robot with a robust and accurate pose.
-<br/>
-<img src='/images/localize.gif' width='500'>"
+title: "GraspGPT (IEEE RA-L 2023)"
+excerpt: "Leveraging semantic knowledge from a large language model for task-oriented grasping."
 collection: portfolio
 ---
 
-In an off-road environment, the assumption of horizontal ground is usually invalid, so IMU and wheel encoders are integrated into a closed form on SE3, which can be used to correct the distortion caused by motion. In addition, [LPD-Net](https://github.com/qiaozhijian/LPD-Net-Pytorch.git) (reproduced by myself) is integrated into [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM.git) to detect loop-closure with a coarse-to-fine sequence matching strategy, which helps to build a more accurate map for map-based localization. Then [PLReg3D](https://github.com/IRMVLab/PLReg3D.git) learns local and global descriptors jointly for global localization at the initial step. Finally, a loosely-coupled method based on the pose graph is applied to provide the robot with a robust and accurate pose.
-<br/>
-<div align=center><img src='/images/robot.png' width='300'></div>
+Task-oriented grasping in real-world settings depends on *how* an object should be grasped (e.g., grasp a knife by its handle to cut fruit; grasp the blade to hand it to a user).
 
-### Global Localization
-The global localization framework is shown in Figure 1. For a query point cloud (yellow), we use KNN to find the most similar point cloud (blue) based on the global descriptor of the point cloud and exclude those that are not similar (grey). This gets a coarse pose in the global coordinate system. Then, based on the local descriptors, we register the query point cloud (yellow) and its most similar point cloud (blue) to obtain an accurate pose.
+Existing approaches often rely on a pre-built knowledge base, which limits generalization to unseen objects and tasks. We propose a Transformer-based model that leverages **LLM semantic knowledge** for better generalization.
 
-<div align=center>
-<img src='/images/pipline.png' >
-<br>
-<div style="color:orange; border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;padding: 2px;">
-Figure 1
-</div>
-</div>
-
-We show the global localization based on a built map(gray) in Figure 2. Given the query point cloud (yellow), based on the KNN on global
-descriptors, we find the most similar submap (blue) to query. The robot has different positions and poses when collecting these two point
-cloud frames, which are marked by the coordinate axes shown in the figure. With red, green, and blue axis corresponding to X, Y and
-Z axis, respectively, the coordinate system on the left refers to the submap, while the right refers to the query. Through KNN on the local
-descriptors and outlier removing methods such as RANSAC, we can expose the correspondence between two point clouds to compute their relative pose transformation.
-
-<div align=center>
-<img src='/images/registration.jpg' >
-<br>
-<div style="color:orange; border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;padding: 2px;">
-Figure 2
-</div>
-</div>
-
-### Demo
-<div align=center>
-<img src='/images/localize.gif' width='500'>
-<br>
-<div style="color:orange; border-bottom: 1px solid #d9d9d9;display: inline-block;color: #999;padding: 2px;">
-Localization is based on a built map.
-</div>
-</div>
+- Paper: <https://arxiv.org/pdf/2307.13204>
+- Project/Video: <https://sites.google.com/view/graspgpt/>

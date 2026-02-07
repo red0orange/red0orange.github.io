@@ -7,17 +7,17 @@
 
 # Site Settings
 locale: "en-US"
-title: "Zhijian's Website"
+title: "Dehao Huang's Website"
 
 # Server Settings
 port: 4000
 host: 0.0.0.0
 title_separator: "-"
-name: &name "Zhijian Qiao (乔志健)"
-description: &description "Ph.D. student in HKUST Aerial Robotics Group"
-url: https://qiaozhijian.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name: &name "Dehao Huang (黄德豪)"
+description: &description "Ph.D. Candidate in Robotics & Smart Manufacturing @ Zhongguancun Academy × SUSTech"
+url: https://red0orange.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
-repository: "qiaozhijian/qiaozhijian.github.io"
+repository: "red0orange/red0orange.github.io"
 teaser:  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs: false # true, false (default)
 words_per_minute: 160
@@ -86,14 +86,14 @@ analytics:
 
 # Site Author
 author:
-  name: "Zhijian Qiao (乔志健)"
-  avatar: "/media/images/opt1.jpg"
-  bio: "Ph.D. student in HKUST Aerial Robotics Group"
-  location: "Clear Water Bay, Hong Kong, China"
-  employer:
+  name: "Dehao Huang (黄德豪)"
+  avatar: "/media/images/avatar.svg"
+  bio: "Robotic manipulation & grasping; RL for Vision-Language-Action (VLA) models."
+  location: "Shenzhen, China"
+  employer: "Robotics and Computer Vision Lab, SUSTech"
   pubmed:
-  googlescholar: https://scholar.google.com.hk/citations?user=R1ybYxoAAAAJ&hl=zh-CN&oi=ao
-  email: "zqiaoac@connect.ust.hk"
+  googlescholar:
+  email: "12232120@mail.sustech.edu.cn"
   researchgate:
   uri:
   bitbucket:
@@ -102,7 +102,7 @@ author:
   flickr:
   facebook:
   foursquare:
-  github: "qiaozhijian"
+  github: "red0orange"
   google_plus:
   keybase:
   instagram:

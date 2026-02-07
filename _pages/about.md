@@ -8,36 +8,32 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate at the [Aerial Robotics Group](https://uav.hkust.edu.hk/) at HKUST, advised by Prof. [Shaojie Shen](https://scholar.google.com.hk/citations?user=u8Q0_xsAAAAJ&hl=zh-CN&oi=ao). Before that, I received my Master's degree from the [IRMV Lab](http://irmv.sjtu.edu.cn/) at Shanghai Jiao Tong University, supervised by Prof. [Hesheng Wang](http://irmv.sjtu.edu.cn/wanghesheng).
+I am **Dehao Huang (黄德豪)**, a Ph.D. candidate at **Zhongguancun Academy & Southern University of Science and Technology (SUSTech)**.
+I am with the [Robotics and Computer Vision Lab](https://rcvlab.eee.sustech.edu.cn/), advised by Prof. [Hong Zhang](https://scholar.google.com/citations?hl=en&user=J7UkpAIAAAAJ) and Prof. [Yue Wang](https://scholar.google.com/citations?user=fGv5irIAAAAJ&hl=en&oi=sra).
 
-My research interests lie in robotics and autonomous driving, with a focus on generative learning, robust estimation, global localization, and long-term mapping.
+My research focuses on **robotic manipulation and grasping**. Currently, I am working on **reinforcement learning (RL) for Vision-Language-Action (VLA) models**, aiming to enable VLA models to interact autonomously with environments and achieve strong performance in both single-task and multi-task settings.
 
-Feel free to reach out if you are interested in collaboration or have any questions: zqiaoac@connect.ust.hk :)
+I aim to be an engineering-oriented researcher, dedicated to applying frontier technologies to solve practical problems.
 
-Education
-======
-* Ph.D., Hong Kong University of Science and Technology, 2022 - Present
-  * Department of Electronic and Computer Engineering
-  
-* M.S. Control Engineering, Shanghai Jiao Tong University, 2019 - 2022
-  * Department of Automation, School of Electronics, Information and Electrical Engineering 
+Feel free to reach out if you are interested in collaboration or have any questions.
 
-* B.S. Automation, Northeastern University(China), 2015 - 2019
-  * Department of Automation, College of Information Science and Engineering
-  
-Selected Honors
-======
-* **Outstanding Graduates**, 2022, SJTU
-* **Most Influential Graduates**, 2019, NEU
-* **Champion**, the 17th China University Robot Competition, 2018 [[link]](http://www.cnrobocon.net/#/)
-* **Runner-up**, The ABU Asia-Pacific Robot Contest, 2018 [[link]](https://en.wikipedia.org/wiki/ABU_Robocon)
-* **Champion**, the 16th China University Robot Competition, 2017 [[link]](http://www.cnrobocon.net/#/)
-* **Best Engineering**, The ABU Asia-Pacific Robot Contest, 2017 [[link]](http://www.aburobocon.net/)
+### Contact
 
-Community Services
-======
-* Conference reviewer: ICRA, IROS, CVPR, ICCV, ECCV
-* Journal reviewer: T-RO, T-ASE, RAL
-* Teaching assistant: 
-  * ELEC 1100: Introduction to Electro-Robot Design, HKUST, 2023 Spring
-  * ELEC 3210: Machine Learning and Information Processing for Robotics, HKUST, 2023 Fall
+- **Email**: `12232120@mail.sustech.edu.cn` / `huangdehao919@gmail.com`
+- **GitHub**: [red0orange](https://github.com/red0orange)
+- **Phone**: `+86 130 4978 8610` (optional; can remove if you prefer)
+
+### Education
+
+- **Ph.D. Candidate in Robotics and Smart Manufacturing**, Zhongguancun Academy & SUSTech (Expected 2027)  
+  Advisors: Prof. Hong Zhang, Prof. Yue Wang
+- **M.S. in Electronic Science and Technology**, SUSTech (2022–2024)  
+  Advisor: Prof. Hong Zhang
+- **B.E. in Information Engineering**, South China Normal University (2018–2022)
+
+### Selected Awards
+
+- 1st Academic Research Star of Zhongguancun Academy (2026)
+- RoboMaster National Second Prize (2020)
+- American ICM / MCM Meritorious Winner (2021)
+- National Undergraduate Smart Car Competition Third Prize (2020)
