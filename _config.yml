@@ -87,7 +87,7 @@ analytics:
 # Site Author
 author:
   name: "Dehao Huang (黄德豪)"
-  avatar: "/media/images/avatar.svg"
+  avatar: "/media/images/avatar.jpeg"
   bio: "Robotic manipulation & grasping; RL for Vision-Language-Action (VLA) models."
   location: "Shenzhen, China"
   employer: "Robotics and Computer Vision Lab, SUSTech"

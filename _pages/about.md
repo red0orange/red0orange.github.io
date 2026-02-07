@@ -21,7 +21,7 @@ Feel free to reach out if you are interested in collaboration or have any questi
 
 - **Email**: `12232120@mail.sustech.edu.cn` / `huangdehao919@gmail.com`
 - **GitHub**: [red0orange](https://github.com/red0orange)
-- **Phone**: `+86 130 4978 8610` (optional; can remove if you prefer)
+<!-- - **Phone**: `+86 130 4978 8610` (optional; can remove if you prefer) -->
 
 ### Education
 
