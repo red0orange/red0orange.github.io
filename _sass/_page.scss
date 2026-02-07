@@ -372,6 +372,76 @@
   }
 }
 
+/*
+  Highlight page (video-first layout)
+  ========================================================================== */
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.highlight-card {
+  padding: 0.9rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(#000, 0.05);
+}
+
+.highlight-bullet {
+  margin-bottom: 0.6rem;
+  line-height: 1.25;
+}
+
+.highlight-dot {
+  color: $link-color;
+  margin-right: 0.25rem;
+}
+
+.highlight-links {
+  margin-top: 0.5rem;
+  font-size: $type-size-6;
+  color: mix(#fff, $gray, 25%);
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+.highlight-note {
+  margin-top: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  border-left: 4px solid $link-color;
+  background: $lighter-gray;
+}
+
+.responsive-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: $border-radius;
+  background: #000;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
 /*
    Related
