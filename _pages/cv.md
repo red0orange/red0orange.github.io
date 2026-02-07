@@ -15,8 +15,8 @@ Robotic manipulation and grasping. Reinforcement Learning (RL) for Vision-Langua
 
 ### Education
 
-- **Ph.D. Candidate in Robotics and Smart Manufacturing**, Zhongguancun Academy & SUSTech (Expected 2027)  
-  Advisors: Prof. Hong Zhang, Prof. Yue Wang
+- **Ph.D. Candidate in Robotics and Smart Manufacturing**, SUSTech (joint Ph.D. program with ZGCA; Expected 2027)  
+  Advisors: Prof. Yue Wang (ZGCA), Prof. Hong Zhang (SUSTech)
 - **M.S. in Electronic Science and Technology**, SUSTech (2022–2024)  
   Advisor: Prof. Hong Zhang
 - **B.E. in Information Engineering**, South China Normal University (2018–2022)

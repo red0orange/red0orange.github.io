@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am **Dehao Huang (黄德豪)**, a Ph.D. candidate at **Zhongguancun Academy & Southern University of Science and Technology (SUSTech)**.
-I am with the [Robotics and Computer Vision Lab](https://rcvlab.eee.sustech.edu.cn/), advised by Prof. [Hong Zhang](https://scholar.google.com/citations?hl=en&user=J7UkpAIAAAAJ) and Prof. [Yue Wang](https://scholar.google.com/citations?user=fGv5irIAAAAJ&hl=en&oi=sra).
+I am **Dehao Huang (黄德豪)**, a Ph.D. candidate at **Southern University of Science and Technology (SUSTech)**, in a **joint Ph.D. program with Zhongguancun Academy (ZGCA)**. I am with the [Robotics and Computer Vision Lab (RCVLab)](https://rcvlab.eee.sustech.edu.cn/) at SUSTech, advised by Prof. [Hong Zhang](https://scholar.google.com/citations?hl=en&user=J7UkpAIAAAAJ) (SUSTech) and Prof. [Yue Wang](https://scholar.google.com/citations?user=fGv5irIAAAAJ&hl=en&oi=sra) (ZGCA).
 
 My research focuses on **robotic manipulation and grasping**. Currently, I am working on **reinforcement learning (RL) for Vision-Language-Action (VLA) models**, aiming to enable VLA models to interact autonomously with environments and achieve strong performance in both single-task and multi-task settings.
 
@@ -25,7 +24,7 @@ Feel free to reach out if you are interested in collaboration or have any questi
 
 ### Education
 
-- **Ph.D. Candidate in Robotics and Smart Manufacturing**, Zhongguancun Academy & SUSTech (Expected 2027)  
+- **Ph.D. Candidate in Robotics and Smart Manufacturing**, Zhongguancun Academy & SUSTech 
   Advisors: Prof. Hong Zhang, Prof. Yue Wang
 - **M.S. in Electronic Science and Technology**, SUSTech (2022–2024)  
   Advisor: Prof. Hong Zhang
