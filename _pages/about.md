@@ -31,6 +31,11 @@ Feel free to reach out if you are interested in collaboration or have any questi
   Advisor: Prof. Hong Zhang
 - **B.E. in Information Engineering**, South China Normal University (2018–2022)
 
+### Experience
+
+- **Algorithm Intern**, SenseTime (Yuan Luobo Robotics), 2024  
+  Contributed to algorithm development and deployment for self-developed mobile manipulation robots.
+
 ### Selected Awards
 
 - 1st Academic Research Star of Zhongguancun Academy (2026)

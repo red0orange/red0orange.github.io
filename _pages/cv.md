@@ -21,12 +21,21 @@ Robotic manipulation and grasping. Reinforcement Learning (RL) for Vision-Langua
   Advisor: Prof. Hong Zhang
 - **B.E. in Information Engineering**, South China Normal University (2018–2022)
 
+### Experience
+
+- **Algorithm Intern**, SenseTime (Yuan Luobo Robotics), 2024  
+  Contributed to algorithm development and deployment for self-developed mobile manipulation robots.
+
 ### Selected Publications
 
 - **Huang, Dehao**, Wenlong Dong, Chao Tang, Hong Zhang. *HGDiffuser: Efficient Task-Oriented Grasp Generation via Human-Guided Grasp Diffusion Models.* IROS 2025.  
   [Paper](https://arxiv.org/pdf/2503.00508) · [Video](https://sites.google.com/view/hgdiffuser) · [Code](https://github.com/red0orange/handgrasp_ws)
 - **Huang, Dehao**, Chao Tang, Hong Zhang. *Efficient Object Rearrangement via Multi-view Fusion.* ICRA 2024.  
   [Paper](https://arxiv.org/pdf/2309.08994) · [Video](https://sites.google.com/view/multi-view-rearr)
+- Tang, Chao, **Huang, Dehao**, Wenlong Dong, Ruinian Xu, Hong Zhang. *FoundationGrasp: Generalizable Task-Oriented Grasping with Foundation Models.* IEEE T-ASE 2025.  
+  [Paper](https://arxiv.org/pdf/2404.10399) · [Video](https://sites.google.com/view/foundationgrasp/)
+- Tang, Chao, **Huang, Dehao**, Wenqi Ge, Weiyu Liu, Hong Zhang. *GraspGPT: Leveraging Semantic Knowledge from a Large Language Model for Task-Oriented Grasping.* IEEE RA-L 2023.  
+  [Paper](https://arxiv.org/pdf/2307.13204) · [Video](https://sites.google.com/view/graspgpt/)
 - Shao, Chenyang, **Huang, Dehao**, et al. *OmniScientist: Toward a Co-evolving Ecosystem of Human and AI Scientists.* arXiv 2025.  
   [Paper](https://arxiv.org/pdf/2511.16931)
 
