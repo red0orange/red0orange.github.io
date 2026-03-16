@@ -3,25 +3,14 @@ main:
   - title: "About"
     url: /
 
-  - title: "Publications"
-    url: /publications/
-
-#  - title: "Teaching"
-#    url: /teaching/
-    
-  - title: "Projects"
-    url: /projects/
-
   - title: "Highlight"
     url: /highlight/
 
-  - title: "CV"
-    url: /cv/
-#  - title: "Blog Posts"
-#    url: /year-archive/
-#
-#  - title: "CV"
-#    url: /cv/
-#
-#  - title: "Guide"
-#    url: /markdown/
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Blogs"
+    url: /blogs/
+
+  - title: "Publications"
+    url: /publications/

@@ -1,0 +1,395 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+% The automated optical recognition software used to digitize resume
+% information works best with fonts that do not have serifs. This
+% command uses a sans serif font throughout. Uncomment both lines (or at
+% least the second) to restore a Roman font (i.e., a font with serifs).
+%\usepackage{times}
+%\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\baselinestretch}{1.0}
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+\usepackage{comment}
+\usepackage{url}
+\usepackage[T1]{fontenc}
+% For "lorem ipsum" text
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{pifont}
+\usepackage{fontawesome}
+\usepackage{etaremune}
+% Simpler bibsection for CV sections
+% (thanks to natbib for inspiration)
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em} %1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}%
+        {\begin{enumerate}{}{%
+%        {\begin{list}{}{%
+       \setlength{\leftmargin}{\bibhang}%
+       \setlength{\itemindent}{-\leftmargin}%
+       \setlength{\itemsep}{\bibsep}%
+       \setlength{\parsep}{\z@}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{enumerate}\vspace{-.6\baselineskip}}
+%        {\end{list}\vspace{-.6\baselineskip}}
+\makeatother
+
+% Layout: Puts the section titles on left side of page
+% \reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+%\usepackage[paper=letterpaper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=1.2in,     % Length of section titles
+%            marginparsep=.05in,       % Space between titles and text
+%            margin=1in,               % 1 inch margins
+%            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+% \usepackage[paper=a4paper,
+%             %includefoot, % Uncomment to put page number above margin
+%             marginparwidth=27.5mm,    % Length of section titles
+%             marginparsep=1.5mm,       % Space between titles and text
+%             margin=18mm,              % 25mm margins
+%             includemp]{geometry}
+
+\usepackage[paper=a4paper,
+            includefoot, % Uncomment to put page number above margin
+            marginparwidth=0mm,    % Length of section titles
+            marginparsep=0mm,       % Space between titles and text
+            margin=10mm,              % 25mm margins
+            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+\usepackage[shortlabels]{enumitem}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+% \pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.9}
+\definecolor{myred}{RGB}{250, 100, 20}
+
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+% (optional argument typesets an object right-justified across from name
+%  as well)
+%
+% Usage: \makeheading{name}
+%        OR
+%        \makeheading[right_object]{name}
+%
+% Place at top of document. It should be the first thing.
+% If ``right_object'' is provided in the square-braced optional
+% argument, it will be right justified on the same line as ``name'' at
+% the top of the CV. For example:
+%
+%       \makeheading[\emph{Curriculum vitae}]{Your Name}
+%
+% will put an emphasized ``Curriculum vitae'' at the top of the document
+% as a title. Likewise, a picture could be included:
+%
+%   \makeheading[\includegraphics[height=1.5in]{my_picutre}]{Your Name}
+%
+% the picture will be flush right across from the name.
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+% \newcommand{\makeheading}[2][]%
+%         {#1 \hfill #2}
+
+% The section headings
+%
+% Usage: \section{section name}
+% \renewcommand{\section}[1]{\pagebreak[3]%
+%     \hyphenpenalty=10000%
+%     \vspace{1.3\baselineskip}%
+%     \phantomsection\addcontentsline{toc}{section}{#1}%
+%     \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
+%     \vspace{-\baselineskip}\par}
+
+    
+\renewcommand{\section}[1]{
+\bigskip
+  \begin{Large}
+  {\textsc{\textbf{#1}}}
+  \end{Large}
+  \hrulefill
+  \medskip
+  \\
+}
+
+\newlist{midenumerate}{enumerate}{1}
+\setlist[midenumerate]{label={[\arabic*]},leftmargin=*}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}\vspace{-.6\baselineskip}}
+
+        
+% An itemize-style list with medium space between items
+\newenvironment{midlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=4pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}}
+        
+% An environment IDENTICAL to midlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonemidlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=4pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}\vspace{-.6\baselineskip}}
+
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+\newcommand{\sixblankline}{\quad\vspace{-0.8\baselineskip}\pagebreak[3]}
+% \newcommand{\halfblankline3}{\quad\vspace{-0.2\baselineskip}\pagebreak[3]}
+% \newcommand{\halfline}{\quad\vspace{0.5\baselineskip}\pagebreak[3]}
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+% \providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+%\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    \TeX}}
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+% \newcommand{\homepage}{https://homes.cs.washington.edu/~kusupati}
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{LARGE}
+\textbf{Dehao Huang}
+\end{LARGE}
+\smallskip\\
+\faHome~\href{https://red0orange.github.io}{\textbf{red0orange.github.io}}
+\quad$|$\quad
+\faGraduationCap~\href{https://scholar.google.com/citations?user=qrgIuiEAAAAJ&hl=en}{Google Scholar}
+\quad$|$\quad
+\faGithub~\href{https://github.com/red0orange}{github.com/red0orange}
+\quad$|$\quad
+\faEnvelope~\email{huangdehao919@gmail.com}\\[2pt]
+\href{https://rcvlab.eee.sustech.edu.cn/}{Robotics and Computer Vision Lab}, Dept.\ of Electronic and Electrical Engineering\\
+Southern University of Science and Technology \& Zhongguancun Academy, Shenzhen
+
+\section{Research Interests}
+My research focuses on \textbf{robotic manipulation and grasping}. Currently, I am working on \textbf{Reinforcement Learning (RL) for Vision-Language-Action (VLA) models}, aiming to enable VLA models to interact autonomously with environments and achieve strong performance in both single-task and multi-task settings.
+
+\vspace{2mm}
+My research path has been progressive: during my Master's I worked on perception for robotic grasping; in my Ph.D.\ I explored RL for LLM agents---experiences that naturally converged into my current focus on RL for VLA, bridging perception and decision-making.
+
+\vspace{2mm}
+I aim to be an engineering-oriented researcher, dedicated to applying frontier technologies to solve practical problems.
+
+\section{Education}
+\textbf{Zhongguancun Academy} \& \textbf{SUSTech} \hfill {\textit{Sept 2024 - Jun 2027 (Expected)}}\\
+\emph{Ph.D. Candidate in Robotics and Smart Manufacturing}\\ 
+        Advisor: \href{https://scholar.google.com/citations?hl=en&user=J7UkpAIAAAAJ}{Prof. Hong Zhang} and \href{https://scholar.google.com/citations?user=fGv5irIAAAAJ&hl=en&oi=sra}{Prof. Yue Wang} \\ \halfblankline
+
+\textbf{Southern University of Science and Technology (SUSTech)} \hfill {\textit{Aug 2022 - Jun 2024}}\\
+\emph{M.S. in Electronic Science and Technology}\\ 
+        Advisor: \href{https://scholar.google.com/citations?hl=en&user=J7UkpAIAAAAJ}{Prof. Hong Zhang}\\ \halfblankline
+
+\textbf{South China Normal University} \hfill {\textit{Aug 2018 - Jun 2022}}\\ 
+\emph{B.E. in Engineering in Information Engineering}, GPA: 3.86/5.0
+
+\section{Open Source Contributions}
+\vspace{-3mm}
+\begin{midlist}
+\item \textbf{\href{https://github.com/RLinf/RLinf}{RLinf}} --- Contributed to the development of RLinf, a VLA RL infrastructure framework for training and evaluating Vision-Language-Action models with reinforcement learning.
+\item \textbf{\href{https://github.com/liyiteng/AlohaMini}{AlohaMini}} --- Contributed to the development of AlohaMini, an open-source low-cost mobile manipulation platform for robotics research and education.
+\end{midlist}
+
+\section{Publications}
+\vspace{-6mm}
+\begin{midenumerate}
+\item \textbf{Huang, Dehao}, Wenlong Dong, Chao Tang, and Hong Zhang. "HGDiffuser: Efficient Task-Oriented Grasp Generation via Human-Guided Grasp Diffusion Models." \textit{Accepted by IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2025. \\ \href{https://arxiv.org/pdf/2503.00508}{[Paper]} \href{https://sites.google.com/view/hgdiffuser}{[Video]} \href{https://github.com/red0orange/handgrasp_ws}{[Code]}
+\vspace{-1mm}
+\item \textbf{Huang, Dehao}, Chao Tang, and Hong Zhang. "Efficient Object Rearrangement via Multi-view Fusion." \textit{Accepted by International Conference on Robotics and Automation (ICRA)}, 2024. \\ \href{https://arxiv.org/pdf/2309.08994}{[Paper]} \href{https://sites.google.com/view/multi-view-rearr}{[Video]}
+\vspace{-1mm}
+\item Tang, Chao, \textbf{Dehao Huang}, Wenlong Dong, Ruinian Xu, and Hong Zhang. "Foundationgrasp: Generalizable task-oriented grasping with foundation models." \textit{Accepted by IEEE Transactions on Automation Science and Engineering}, 2025. \\ \href{https://arxiv.org/pdf/2404.10399}{[Paper]} \href{https://sites.google.com/view/foundationgrasp/}{[Video]}
+\vspace{-1mm}
+\item Tang, Chao, \textbf{Dehao Huang}, Wenqi Ge, Weiyu Liu, and Hong Zhang. "Graspgpt: Leveraging semantic knowledge from a large language model for task-oriented grasping." \textit{Accepted by IEEE Robotics and Automation Letters}, 2023. \\ \href{https://arxiv.org/pdf/2307.13204}{[Paper]} \href{https://sites.google.com/view/graspgpt/}{[Video]}
+\vspace{-1mm}
+\item Shao, Chenyang, \textbf{Dehao Huang}, Yu Li, Keyu Zhao, Weiquan Lin, Yining Zhang, Qingbin Zeng et al. "OmniScientist: Toward a Co-evolving Ecosystem of Human and AI Scientists." \textit{arXiv}, 2025. \\ \href{https://arxiv.org/pdf/2511.16931}{[Paper]}
+\vspace{-1mm}
+\item Tang, Chao, \textbf{Dehao Huang}, Lingxiao Meng, Weiyu Liu, and Hong Zhang. "Task-Oriented Grasp Prediction with Visual-Language Inputs." \textit{Accepted by International Conference on Intelligent Robots and Systems (IROS)}, 2023. \\ \href{https://arxiv.org/pdf/2302.14355}{[Paper]} \href{https://www.youtube.com/watch?v=e1wfYQPeAXU}{[Video]}
+\vspace{-1mm}
+\item Chen, Weinan, \textbf{Dehao Huang}, Yaling Pan, Guangcheng Chen, Jiahao Ruan, Jingwen Yu, Jiamin Zheng, and Hong Zhang. "Cloud Learning-based Meets Edge Model-based: Robots Don't Need to Build All the Submaps dItself." \textit{Accepted by IEEE Transactions on Vehicular Technology}, 2023. \\ \href{https://ieeexplore.ieee.org/abstract/document/10264105}{[Paper]} \href{https://ieeexplore.ieee.org/abstract/document/10264105}{[Video]}
+\vspace{-1mm}
+\item \textbf{Huang, Dehao}, Jintao Cheng, Rui Fan, Zhihao Su, Qiongxiong Ma, and Jie Li. "Bone marrow cell recognition: Training deep object detection with a new loss function." \textit{Accepted by IEEE International Conference on Imaging Systems and Techniques (IST)}, 2021. \\ \href{https://arxiv.org/pdf/2110.12647}{[Paper]}
+\vspace{-1mm}
+\item Guo, Liang, Peiduo Huang, \textbf{Dehao Huang}, Zilan Li, Chenglong She, Qianhang Guo, Qingmao Zhang, Jiaming Li, Qiongxiong Ma, and Jie Li. "A classification method to classify bone marrow cells with class imbalance problem." \textit{Accepted by Biomedical Signal Processing and Control}, 2022. \\ \href{https://www.sciencedirect.com/science/article/abs/pii/S1746809421008934}{[Paper]}
+\end{midenumerate}
+\vspace{-2mm}
+
+% \section{Project}
+\section{Competitions}
+\textbf{RoboMaster Robotics Competition} \hfill {\textit{Sep 2019 – Sep 2021}}\\
+\emph{Algorithm Group Leader} \hfill{\emph{PIONEER Team \& SCNU}}\\
+\vspace{-3mm}
+\begin{midlist}
+\item Enhanced Armor Recognition: Improved recall and accuracy using channel fusion, flood fill methods, and a neural network for anomaly detection in digital recognition.
+\item 3D Positioning with Monocular Vision: Calibrated internal and external parameters of a monocular camera, utilizing the PnP solution for precise gimbal control.
+\item ROS-Based Debugging Framework: Developed a program framework with custom RQT tools and a parameter debugging interface via the ROS parameter server.
+\item Robot Localization with AprilTag: Implemented precise localization and trajectory control using AprilTag and PID control. \\ \halfblankline
+\end{midlist}
+
+\textbf{National College Students' Smart Car Competition} \hfill {\textit{July 2020 – Aug 2020}}\\
+\emph{Team Leader} \hfill{\emph{PIONEER Team \& SCNU}}\\
+\vspace{-3mm}
+\begin{midlist}
+\item Ackerman Motion Model Optimization: Enhanced steering angular velocity accuracy by integrating IMU attitude information into a closed-loop control system.
+\item Positioning Accuracy Improvement: Utilized an Extended Kalman Filter to fuse odometer and IMU data, significantly improving positioning accuracy. \\ \halfblankline
+\end{midlist}
+
+\section{Selected Awards and Honors}
+\vspace{-3mm}
+\begin{midlist}
+\item The 1st Academic Research Star of Zhongguancun Academy \hfill{\textit{2026}}
+\item RoboMaster National Second Prize \hfill{\textit{2020}}
+\item American Interdisciplinary Contest in Modeling (ICM) Meritorious Winner \hfill{\textit{2021}}
+\item SCNU First-Class Scholarship \hfill{\textit{2020}}
+\item National Undergraduate Smart Car Competition Third Prize \hfill{\textit{2020}}
+
+\end{midlist}
+
+\section{Skills}
+\vspace{-3mm}
+\begin{midlist}
+\item \textbf{Programming:} Python, C/C++.
+\item \textbf{Software \& Tools:} RLinf, LeRobot, PyTorch, ROS, Git, \LaTeX.
+\item \textbf{Languages:} Chinese: Native. English: CET-6.
+\end{midlist}
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------%
+% The following is copyright and licensing information for
+% redistribution of this LaTeX source code; it also includes a liability
+% statement. If this source code is not being redistributed to others,
+% it may be omitted. It has no effect on the function of the above code.
+%----------------------------------------------------------------------%, .
+% Copyright (c) 2007, 2008, 2009, 2010, 2011 by Theodore P. Pavlic
+% Copyright (c) 2020 by Aditya Kusupati
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%----------------------------------------------------------------------%

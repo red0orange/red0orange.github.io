@@ -38,8 +38,12 @@ author_profile: true
     </div>
     <div class="highlight-links"><a href="https://arxiv.org/pdf/2309.08994">Paper</a></div>
   </div>
+
 </div>
 
+<div class="highlight-note">
+  <span class="highlight-dot">&bull;</span> <strong>OmniScientist (arXiv 2025)</strong> — Toward a co-evolving ecosystem of human and AI scientists. <a href="https://arxiv.org/pdf/2511.16931">Paper</a>
+</div>
 <div class="highlight-note">
   <span class="highlight-dot">&bull;</span> <strong>CloudEdgeSLAM (IEEE TVT 2023)</strong> — Cloud learning meets edge model-based SLAM. <a href="https://ieeexplore.ieee.org/abstract/document/10264105">Paper</a>
 </div>
