@@ -88,11 +88,11 @@ analytics:
 author:
   name: "Dehao Huang (黄德豪)"
   avatar: "/media/images/avatar.jpeg"
-  bio: "Robotic manipulation & grasping; RL for Vision-Language-Action (VLA) models."
+  bio: "Robotic manipulation & grasping. Learning with less human intervention."
   location: "Shenzhen, China"
   employer: "Robotics and Computer Vision Lab, SUSTech"
   pubmed:
-  googlescholar:
+  googlescholar: "https://scholar.google.com/citations?user=AESnhwIAAAAJ&hl=en"
   email: "12232120@mail.sustech.edu.cn"
   researchgate:
   uri:

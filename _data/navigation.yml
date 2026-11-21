@@ -1,16 +1,12 @@
-# main links links
+brand: "Dehao Huang"
 main:
   - title: "About"
-    url: /
-
-  - title: "Highlight"
-    url: /highlight/
-
-  - title: "Projects"
-    url: /projects/
-
+    url: /#about
+  - title: "Research"
+    url: /#research
+  - title: "Experience"
+    url: /#experience
+  - title: "CV"
+    url: /media/files/cv.pdf
   - title: "Blogs"
     url: /blogs/
-
-  - title: "Publications"
-    url: /publications/

@@ -1,0 +1,282 @@
+# Shared by the website and scripts/generate-cv.py. Keep newest work first within each year.
+- id: erlt
+  display_title: Making VLA reinforcement learning more efficient
+  title: 'eRLT: Efficient VLA Reinforcement Learning via Action-Relevant Token Routing'
+  short_title: eRLT
+  authors:
+  - Dehao Huang
+  - Jianbang Liu
+  - Jianpan Gao
+  - Chao Tang
+  - Zilang Cen
+  - Zedong Dan
+  - Jiaheng Wang
+  - Tingguang Li
+  - Yue Wang
+  - Hong Zhang
+  year: 2026
+  venue: arXiv
+  status: preprint
+  category: robotics
+  summary: Routing action-relevant information across the tokens and layers of a frozen VLA for sample-efficient online reinforcement learning.
+  paper: https://arxiv.org/abs/2610.00913
+  project: https://red0orange.github.io/eRLT_site/
+  video: https://red0orange.github.io/eRLT_site/#video
+  video_file: https://red0orange.github.io/eRLT_site/assets/media/overview.mp4
+  teaser: /media/images/research/erlt.jpg
+  teaser_alt: eRLT real-robot manipulation demonstration
+  featured: true
+- id: vlaconf
+  display_title: Knowing when a robot needs help
+  title: 'VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models'
+  short_title: VLAConf
+  authors:
+  - Dehao Huang
+  - Aoxiang Gu
+  - Chengjie Zhang
+  - Bolin Zou
+  - Wenlong Dong
+  - Zilang Cen
+  - Yue Wang
+  - Hong Zhang
+  year: 2026
+  venue: arXiv
+  status: preprint
+  category: robotics
+  summary: Estimating calibrated task-success confidence from frozen VLA representations to support selective expert assistance.
+  paper: https://arxiv.org/abs/2605.29605
+  project: https://sites.google.com/view/vlaconf
+  teaser: /media/images/research/vlaconf.png
+  teaser_alt: VLAConf estimates eventual task success from an observed rollout prefix
+  featured: true
+- id: cocoreviewbench
+  display_title: Measuring the quality of AI peer review
+  title: 'CoCoReviewBench: A Completeness- and Correctness-Oriented Benchmark for AI Reviewers'
+  short_title: CoCoReviewBench
+  authors:
+  - Hexuan Deng
+  - Xiaopeng Ke
+  - Yichen Li
+  - Ruina Hu
+  - Dehao Huang
+  - Derek F. Wong
+  - Yue Wang
+  - Xuebo Liu
+  - Min Zhang
+  year: 2026
+  venue: ICML
+  status: published
+  category: ai-science
+  summary: Evaluating AI reviewers through the completeness and correctness of their feedback, using a benchmark of 3,900 papers.
+  paper: https://arxiv.org/abs/2605.07905
+  code: https://github.com/hexuandeng/CoCoReviewBench
+  teaser: /media/images/research/cocoreviewbench.png
+  teaser_alt: CoCoReviewBench framework for completeness- and correctness-oriented review evaluation
+  featured: true
+- id: easy-iil
+  display_title: Learning with less hands-on supervision
+  featured: true
+  title: 'Easy-IIL: Reducing Human Operational Burden in Interactive Imitation Learning via an Assistant Expert'
+  short_title: Easy-IIL
+  authors:
+  - Chengjie Zhang
+  - Chao Tang
+  - Wenlong Dong
+  - Dehao Huang
+  - Aoxiang Gu
+  - Hong Zhang
+  year: 2026
+  venue: arXiv
+  status: preprint
+  category: robotics
+  summary: Using a model-based assistant expert to handle much of data collection, with human intervention reserved for critical states.
+  paper: https://arxiv.org/abs/2603.12769
+  teaser: /media/images/research/easy-iil.png
+  teaser_alt: Easy-IIL delegates most interaction and data collection to an assistant expert
+- id: omniscientist
+  title: 'OmniScientist: Toward a Co-evolving Ecosystem of Human and AI Scientists'
+  short_title: OmniScientist
+  authors:
+  - Chenyang Shao
+  - Dehao Huang
+  - Yu Li
+  - Keyu Zhao
+  - Weiquan Lin
+  - Yining Zhang
+  - Qingbin Zeng
+  - et al.
+  year: 2025
+  venue: arXiv
+  status: preprint
+  category: ai-science
+  summary: A collaborative ecosystem connecting human and AI scientists across the research lifecycle.
+  paper: https://arxiv.org/abs/2511.16931
+  teaser: /media/images/research/omniscientist.png
+  teaser_alt: Overview of the OmniScientist collaborative research system
+- id: hgdiffuser
+  display_title: Teaching robots to grasp for a task
+  title: 'HGDiffuser: Efficient Task-Oriented Grasp Generation via Human-Guided Grasp Diffusion Models'
+  short_title: HGDiffuser
+  authors:
+  - Dehao Huang
+  - Wenlong Dong
+  - Chao Tang
+  - Hong Zhang
+  year: 2025
+  venue: IROS
+  status: published
+  category: robotics
+  summary: Human-guided diffusion directly generates task-oriented 6-DoF grasps, incorporating demonstration-derived constraints into sampling.
+  paper: https://arxiv.org/abs/2503.00508
+  project: https://sites.google.com/view/hgdiffuser
+  code: https://github.com/red0orange/handgrasp_ws
+  video: https://www.youtube.com/watch?v=fUt6cE9SZoY
+  embed: https://www.youtube-nocookie.com/embed/fUt6cE9SZoY
+  teaser: /media/images/research/hgdiffuser.png
+  teaser_alt: HGDiffuser generates task-oriented robotic grasps using human demonstration constraints
+  featured: true
+  video_poster: /media/images/research/hgdiffuser-video.jpg
+- id: rtagrasp
+  title: 'RTAGrasp: Learning Task-Oriented Grasping from Human Videos via Retrieval, Transfer, and Alignment'
+  short_title: RTAGrasp
+  authors:
+  - Wenlong Dong
+  - Dehao Huang
+  - Jiangshan Liu
+  - Chao Tang
+  - Hong Zhang
+  year: 2025
+  venue: ICRA
+  status: published
+  category: robotics
+  summary: Retrieving and transferring grasp constraints from human videos to new objects for training-free task-oriented grasping.
+  paper: https://arxiv.org/abs/2409.16033
+  project: https://sites.google.com/view/rtagrasp/home
+  doi: https://doi.org/10.1109/ICRA55743.2025.11128140
+  teaser: /media/images/research/rtagrasp.png
+  teaser_alt: RTAGrasp transfers task-oriented grasp constraints from human demonstrations
+- id: foundationgrasp
+  title: 'FoundationGrasp: Generalizable Task-Oriented Grasping with Foundation Models'
+  short_title: FoundationGrasp
+  authors:
+  - Chao Tang
+  - Dehao Huang
+  - Wenlong Dong
+  - Ruinian Xu
+  - Hong Zhang
+  year: 2025
+  venue: IEEE T-ASE
+  status: published
+  category: robotics
+  summary: Combining semantic and geometric knowledge from foundation models to generalize grasping across objects and tasks.
+  paper: https://arxiv.org/abs/2404.10399
+  project: https://sites.google.com/view/foundationgrasp/
+  video: https://www.youtube.com/watch?v=B6iTa6BRB1w
+  embed: https://www.youtube-nocookie.com/embed/B6iTa6BRB1w
+  video_poster: /media/images/research/foundationgrasp-video.jpg
+- id: rearrangement
+  title: Efficient Object Rearrangement via Multi-view Fusion
+  short_title: Multi-view Rearrangement
+  authors:
+  - Dehao Huang
+  - Chao Tang
+  - Hong Zhang
+  year: 2024
+  venue: ICRA
+  status: published
+  category: robotics
+  summary: Fusing multiple observations to rearrange a cluttered tabletop to match a single goal image.
+  paper: https://arxiv.org/abs/2309.08994
+  project: https://sites.google.com/view/multi-view-rearr
+  video: https://www.youtube.com/watch?v=oUlDwmMbjQU
+  embed: https://www.youtube-nocookie.com/embed/oUlDwmMbjQU
+  video_poster: /media/images/research/rearrangement-video.jpg
+- id: graspgpt
+  title: 'GraspGPT: Leveraging Semantic Knowledge from a Large Language Model for Task-Oriented Grasping'
+  short_title: GraspGPT
+  authors:
+  - Chao Tang
+  - Dehao Huang
+  - Wenqi Ge
+  - Weiyu Liu
+  - Hong Zhang
+  year: 2023
+  venue: IEEE RA-L
+  status: published
+  category: robotics
+  summary: Using language-model semantic knowledge to generalize task-oriented grasping to unseen objects and tasks.
+  paper: https://arxiv.org/abs/2307.13204
+  project: https://sites.google.com/view/graspgpt/
+  video: https://www.youtube.com/watch?v=qq0DMdHRw1E
+  embed: https://www.youtube-nocookie.com/embed/qq0DMdHRw1E
+  video_poster: /media/images/research/graspgpt-video.jpg
+- id: vl-grasp
+  title: Task-Oriented Grasp Prediction with Visual-Language Inputs
+  short_title: Visual-Language Grasping
+  authors:
+  - Chao Tang
+  - Dehao Huang
+  - Lingxiao Meng
+  - Weiyu Liu
+  - Hong Zhang
+  year: 2023
+  venue: IROS
+  status: published
+  category: robotics
+  summary: Predicting task-oriented grasps from visual observations and language instructions.
+  paper: https://arxiv.org/abs/2302.14355
+  video: https://www.youtube.com/watch?v=e1wfYQPeAXU
+- id: cloudedgeslam
+  title: 'Cloud Learning-Based Meets Edge Model-Based: Robots Don''t Need to Build All the Submaps Itself'
+  short_title: CloudEdgeSLAM
+  authors:
+  - Weinan Chen
+  - Dehao Huang
+  - Yaling Pan
+  - Guangcheng Chen
+  - Jiahao Ruan
+  - Jingwen Yu
+  - Jiamin Zheng
+  - Hong Zhang
+  year: 2023
+  venue: IEEE TVT
+  status: published
+  category: robotics
+  summary: Combining cloud-side learning-based SLAM with an edge-side model-based system.
+  paper: https://ieeexplore.ieee.org/abstract/document/10264105
+- id: cell-classification
+  title: A classification method to classify bone marrow cells with class imbalance problem
+  short_title: Bone Marrow Cell Classification
+  authors:
+  - Liang Guo
+  - Peiduo Huang
+  - Dehao Huang
+  - Zilan Li
+  - Chenglong She
+  - Qianhang Guo
+  - Qingmao Zhang
+  - Jiaming Li
+  - Qiongxiong Ma
+  - Jie Li
+  year: 2022
+  venue: Biomedical Signal Processing and Control
+  status: published
+  category: other
+  summary: Classifying bone marrow cells under class imbalance.
+  paper: https://www.sciencedirect.com/science/article/abs/pii/S1746809421008934
+- id: cell-recognition
+  title: 'Bone marrow cell recognition: Training deep object detection with a new loss function'
+  short_title: Bone Marrow Cell Recognition
+  authors:
+  - Dehao Huang
+  - Jintao Cheng
+  - Rui Fan
+  - Zhihao Su
+  - Qiongxiong Ma
+  - Jie Li
+  year: 2021
+  venue: IST
+  status: published
+  category: other
+  summary: Training deep object detectors for bone marrow cell recognition.
+  paper: https://arxiv.org/abs/2110.12647

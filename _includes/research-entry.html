@@ -1,0 +1,25 @@
+<article class="research-entry{% unless include.paper.teaser or include.paper.video_poster %} research-entry--text{% endunless %}" id="{{ include.paper.id }}" data-featured="{{ include.paper.featured | default: false }}">
+  {% if include.paper.teaser or include.paper.video_poster %}
+  <div class="research-entry__media">
+    {% if include.paper.video_file or include.paper.embed %}
+    <a class="video-preview" href="{{ include.paper.video }}" {% if include.paper.video_file %}data-video-file="{{ include.paper.video_file }}"{% else %}data-video-embed="{{ include.paper.embed }}"{% endif %} aria-label="Play {{ include.paper.short_title | escape }} demonstration">
+      <img src="{{ include.paper.teaser | default: include.paper.video_poster | relative_url }}" alt="{{ include.paper.short_title | escape }} demonstration" loading="lazy" decoding="async" width="640" height="400">
+      <span class="video-preview__label"><span class="play-symbol" aria-hidden="true"></span> Watch demo</span>
+    </a>
+    {% else %}
+    <a class="research-entry__figure" href="{{ include.paper.project | default: include.paper.paper }}" tabindex="-1" aria-hidden="true"><img src="{{ include.paper.teaser | relative_url }}" alt="{{ include.paper.teaser_alt | escape }}" loading="lazy" decoding="async" width="640" height="400"></a>
+    {% endif %}
+  </div>
+  {% endif %}
+  <div class="research-entry__body">
+    <div class="research-entry__meta"><span class="research-entry__name">{{ include.paper.short_title }}</span><span class="research-entry__venue">{{ include.paper.venue }} {{ include.paper.year }}{% if include.paper.status == 'preprint' %} · Preprint{% endif %}</span></div>
+    <h3><a href="{{ include.paper.project | default: include.paper.paper }}">{{ include.paper.display_title | default: include.paper.title | escape }}</a></h3>
+    <p class="research-entry__summary">{{ include.paper.summary }}</p>
+    {% include publication-links.html paper=include.paper %}
+    <details class="paper-citation">
+      <summary>Authors & citation</summary>
+      <p class="paper-citation__title"><a href="{{ include.paper.paper }}">{{ include.paper.title | escape }}</a></p>
+      <p class="research-entry__authors">{% for name in include.paper.authors %}{% if name == 'Dehao Huang' %}<strong>{{ name }}</strong>{% else %}{{ name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+    </details>
+  </div>
+</article>

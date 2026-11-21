@@ -1,0 +1,7 @@
+<div class="publication-links" aria-label="Resources for {{ include.paper.short_title | escape }}">
+  <a href="{{ include.paper.paper }}"><i class="fas fa-file-alt" aria-hidden="true"></i> Paper</a>
+  {% if include.paper.project %}<a href="{{ include.paper.project }}"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Project</a>{% endif %}
+  {% if include.paper.code %}<a href="{{ include.paper.code }}"><i class="fas fa-code" aria-hidden="true"></i> Code</a>{% endif %}
+  {% if include.paper.video %}<a href="{{ include.paper.video }}"><i class="fas fa-play" aria-hidden="true"></i> Video</a>{% endif %}
+  {% if include.paper.doi %}<a href="{{ include.paper.doi }}"><i class="fas fa-book-open" aria-hidden="true"></i> Publisher</a>{% endif %}
+</div>

@@ -18,6 +18,7 @@
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
+    {% if page.research_index %}<p class="author__mobile-role">Ph.D. candidate · SUSTech & ZGCA</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 

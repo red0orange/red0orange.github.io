@@ -2,3 +2,7 @@
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
+
+{% if page.research_media %}<script src="{{ '/static/js/research-media.js' | relative_url }}" defer></script>{% endif %}
+
+{% if page.research_index %}<script src="{{ '/static/js/research-index.js' | relative_url }}" defer></script>{% endif %}
